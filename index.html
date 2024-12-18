@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>키오스크</title>
+
+  <link rel="stylesheet" href="css/index_css.css" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="images/ufo_logo3.png" alt="logo" id="headerLogo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>한국어</li>
+          <li>ENG</li>
+          <li>日本語</li>
+        </ul>
+      </nav>
+
+      <nav id="reactNav">
+        <select name="lang" id="lang">
+          <option value="kor" selected>한국어</option>
+          <option value="eng">English</option>
+          <option value="jap">日本語</option>
+        </select>
+      </nav>
+    </header>
+    <main>
+      <section id="tabMenu">
+        <input type="radio" name="menu" id="burger" checked>
+        <label for="burger">버거</label>
+        <input type="radio" name="menu" id="drink">
+        <label for="drink">음료</label>
+        <input type="radio" name="menu" id="sidemenu">
+        <label for="sidemenu">사이드</label>
+
+        <div class="tabItems">
+          <div class="items" id="burger1" onclick="buy(this);">
+            <img src="images/burger/burger1.png" alt="burger1" >
+            <h3>군대리아버거 3.5</h3>
+          </div>
+          <div class="items" id="burger2" onclick="buy(this);">
+            <img src="images/burger/burger2.png" alt="burger2">
+            <h3>춘천닭갈비버거 6.9</h3>
+          </div>
+          <div class="items" id="burger3" onclick="buy(this);">
+            <img src="images/burger/burger3.png" alt="burger3">
+            <h3>광양불고기버거 6.9</h3>
+          </div>
+          <div class="items" id="burger4" onclick="buy(this);">
+            <img src="images/burger/burger4.png" alt="burger4">
+            <h3>유학생치즈버거 6.9</h3>
+          </div>
+          <div class="items" id="burger5" onclick="buy(this);">
+            <img src="images/burger/burger5.png" alt="burger5">
+            <h3>늑대치킨버거 6.9</h3>
+          </div>
+          <div class="items" id="burger6" onclick="buy(this);">
+            <img src="images/burger/burger6.png" alt="burger6">
+            <h3>호텔조식버거 6.9</h3>
+          </div>
+          <div class="items" id="burger7" onclick="buy(this);">
+            <img src="images/burger/burger7.png" alt="burger7">
+            <h3>쉡&쉡버거 6.9</h3>
+          </div>
+          <div class="items" id="burger8" onclick="buy(this);">
+            <img src="images/burger/burger8.png" alt="burger8">
+            <h3>미COOK버거 6.9</h3>
+          </div>
+          <div class="items" id="burger9" onclick="buy(this);">
+            <img src="images/burger/burger8.png" alt="burger9">
+            <h3>수제떡갈비버거 6.9</h3>
+          </div>
+        </div>
+        <div class="tabItems">
+          <div class="items" id="drink1" onclick="buy(this);">
+            <img src="images/drinks/coke.png" alt="coke">
+            <h3>콜라 2.0</h3>
+          </div>
+          <div class="items" id="drink2" onclick="buy(this);">
+            <img src="images/drinks/cider.png" alt="cider">
+            <h3>사이다 2.0</h3>
+          </div>
+          <div class="items" id="drink3" onclick="buy(this);">
+            <img src="images/drinks/lemonade.png" alt="lemonade">
+            <h3>레몬에이드 3.5</h3>
+          </div>
+          <div class="items" id="drink4" onclick="buy(this);">
+            <img src="images/drinks/milkshake.png" alt="milkshake">
+            <h3>밀크쉐이크 5.5</h3>
+          </div>
+          <div class="items" id="drink5" onclick="buy(this);">
+            <img src="images/drinks/americano.png" alt="americano">
+            <h3>아메리카노 2.0</h3>
+          </div>
+        </div>
+        <div class="tabItems">
+          <div class="items" id="sideMenu1" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (1).png" alt="side1">
+            <h3>외계인오징어 3.0</h3>
+          </div>
+          <div class="items" id="sideMenu2" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (2).png" alt="side2">
+            <h3>버팔로콤보[5ea] 3.9</h3>
+          </div>
+          <div class="items" id="sideMenu3" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (3).png" alt="side3">
+            <h3>모짜치즈스틱 2.0</h3>
+          </div>
+          <div class="items" id="sideMenu4" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (4).png" alt="side4">
+            <h3>크리스피감자튀김 2.0</h3>
+          </div>
+          <div class="items" id="sideMenu5" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (5).png" alt="side5">
+            <h3>미트칠리감자튀김 3.9</h3>
+          </div>
+          <div class="items" id="sideMenu6" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (6).png" alt="side6">
+            <h3>어니언치폴레감자튀김 3.7</h3>
+          </div>
+          <div class="items" id="sideMenu7" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (7).png" alt="side7">
+            <h3>수제코우슬로 2.0</h3>
+          </div>
+          <div class="items" id="sideMenu8" onclick="buy(this);">
+            <img src="images/sideMenu/sidemenu (8).png" alt="side8">
+            <h3>HOT빅뱅소스 0.5</h3>
+          </div>
+        </div>
+
+        <script src="js/index_js.js"></script>
+      </section>
+      <aside>
+        <div class="shopcart"></div>
+        <div class="resultInfo">
+          <h1>총 </h1>
+          <h1 id="result">
+            0원
+          </h1>
+        </div>
+        <button onclick="orderRequest()">주문하기</button>
+      </aside>
+    </main>
+    <footer>
+      <h4>
+        Copyright 2022. 서혜원. All rights reserved.
+      </h4>
+    </footer>
+  </div>
+</body>
+</html>
